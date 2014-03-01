@@ -1,0 +1,11 @@
+{
+  "name": "LoveLive",
+  "version": "0.0.0",
+  "authors": [
+    "Kenji Abe <kenji@star-zero.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}

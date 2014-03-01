@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= defined?(title) ? "STAR_ZERO::LoveLive! - " + title : "STAR_ZERO::LoveLive!" %></title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag "all" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">LoveLive!</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="<%= defined?(item) && item == 'music' ? 'active' : '' %>"><a href="music.html">Music</a></li>
+            <li class="<%= defined?(item) && item == 'bluray' ? 'active' : '' %>"><a href="bluray.html">Blu-ray</a></li>
+            <li class="<%= defined?(item) && item == 'book' ? 'active' : '' %>"><a href="book.html">Book</a></li>
+            <li class="<%= defined?(item) && item == 'figure' ? 'active' : '' %>"><a href="figure.html">Figure</a></li>
+            <li class="<%= defined?(item) && item == 'other' ? 'active' : '' %>"><a href="other.html">Other</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/STAR-ZERO/LoveLive">GitHub</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="container" role="main">
+    <%= yield %>
+    </div>
+  </body>
+</html>

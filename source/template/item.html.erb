@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <% data[item].each_with_index do |item, index| %>
+  <div class="col-md-2">
+    <a href="<%= item.link %>" target="_balnk" class="thumbnail side-corner-tag">
+      <img width="160" src="<%= item.image %>">
+      <% if item.have %>
+        <p><span>持ってる</span></p>
+      <% end %>
+      <div class="caption">
+        <h5><%= item.title %></h5>
+      </div>
+    </a>
+  </div>
+  <% if (index + 1) % 4 == 0 %>
+</div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <% end %>
+<% end %>
