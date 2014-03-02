@@ -1,3 +1,5 @@
+@import "bootstrap";
+
 body {
   padding-top: 70px;
   padding-bottom: 30px;
@@ -52,4 +54,41 @@ a.thumbnail {
   }
 }
 
+@media (max-width: $screen-xs-max) {
+  #character {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #character {
+    display: none;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  #character {
+    display: inline;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    img {
+      width: 180px;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  #character {
+    display: inline;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    img {
+      width: 220px;
+    }
+  }
+}
 
