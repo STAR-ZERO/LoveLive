@@ -1,0 +1,1 @@
+$(function(){var r=Math.floor(9*Math.random())+1;$("#character img").attr("src","images/member/member"+r+".png")});
