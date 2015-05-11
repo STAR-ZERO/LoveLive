@@ -1,6 +1,6 @@
 個人的なラブライブのグッズ管理
 
-[http://star-zero.com/LoveLive/](http://star-zero.com/LoveLive)
+[http://star-zero.github.io/LoveLive/](http://star-zero.github.io/LoveLive/)
 
 # Require
 
